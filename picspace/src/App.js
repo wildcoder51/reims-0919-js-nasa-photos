@@ -3,28 +3,28 @@ import './App.css';
 import PictureDay from './Components/PictureDay'
 
 const PictureOfDay = {
-  "copyright": "Sergio Kaminsky",
-  "date": "2019-10-24",
-  "explanation": "Light-years across, this suggestive shape known as the Seahorse Nebula appears in silhouette against a rich, luminous background of stars. Seen toward the royal northern constellation of Cepheus, the dusty, obscuring clouds are part of a Milky Way molecular cloud some 1,200 light-years distant. It is also listed as Barnard 150 (B150), one of 182 dark markings of the sky cataloged in the early 20th century by astronomer E. E. Barnard. Packs of low mass stars are forming within from collapsing cores only visible at long infrared wavelengths. Still, colorful stars in Cepheus add to the pretty, galactic skyscape.",
-  "hdurl": "https://apod.nasa.gov/apod/image/1910/Barnard150Seahorse.jpg",
-  "media_type": "image",
-  "service_version": "v1",
-  "title": "Dark Seahorse in Cepheus",
-  "url": "https://apod.nasa.gov/apod/image/1910/Barnard150Seahorse1024.jpg"
-}
+  'copyright': 'Sergio Kaminsky',
+  'date': '2019-10-24',
+  'explanation': 'Light-years across, this suggestive shape known as the Seahorse Nebula appears in silhouette against a rich, luminous background of stars. Seen toward the royal northern constellation of Cepheus, the dusty, obscuring clouds are part of a Milky Way molecular cloud some 1,200 light-years distant. It is also listed as Barnard 150 (B150), one of 182 dark markings of the sky cataloged in the early 20th century by astronomer E. E. Barnard. Packs of low mass stars are forming within from collapsing cores only visible at long infrared wavelengths. Still, colorful stars in Cepheus add to the pretty, galactic skyscape.',
+  'hdurl': 'https://apod.nasa.gov/apod/image/1910/Barnard150Seahorse.jpg',
+  'media_type': 'image',
+  'service_version': 'v1',
+  'title': 'Dark Seahorse in Cepheus',
+  'url': 'https://apod.nasa.gov/apod/image/1910/Barnard150Seahorse1024.jpg'
+};
 
 
 
 class App extends React.Component {
   constructor(props){
-    super (props)
+    super (props);
     this.state = {
       isSelected : false
 
-    }
+    };
   }
 
-/* Pour sélectionner une image (à voir au prochain sprint)
+  /* Pour sélectionner une image (à voir au prochain sprint)
 handleClick = (isSelected) => {
   this.setState ({isSelected : !this.state.isSelected})}
 */
@@ -35,7 +35,7 @@ handleClick = (isSelected) => {
         <h1>Picture of the Day</h1>
         <section className="picture-of-day"> 
           <PictureDay {...PictureOfDay}
-          isSelected ={this.state.isSelected}/>
+            isSelected ={this.state.isSelected}/>
         </section>
         <section className="random-pictures">
 
