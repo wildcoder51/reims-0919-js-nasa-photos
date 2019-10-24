@@ -1,0 +1,12 @@
+.RandomPictures {
+  display: flex;
+  flex-direction: row;
+}
+
+figure > img{
+  width : 100%; 
+  height: 25vmin;
+}
+h1 {
+  text-align: center;
+}
