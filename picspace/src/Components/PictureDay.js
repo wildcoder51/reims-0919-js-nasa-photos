@@ -6,8 +6,8 @@ import './PictureDay.css';
 const PictureDay = ({explanation, date, title, url}) =>{
   return (
     <article>
-      <figure>
-        <img src={url} alt={title} />
+      <figure className='box-picture-day'>
+        <img className ='img-picture-day' src={url} alt={title} />
       </figure>
       <div>
         <h2>{title}</h2>
