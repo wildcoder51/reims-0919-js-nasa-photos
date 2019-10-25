@@ -1,5 +1,13 @@
 figure > img {
   text-align: center;
-  width: 70%;
-  height: 80vmin;
+  width: 35%;
+  height: 70vh;
+}
+
+@media screen and (max-width: 800px) {
+  figure > img {
+    text-align: center;
+    width: 70%;
+    height: 40vmin;
+  }
 }
