@@ -7,8 +7,8 @@ const RandomPicture = ({randomPictures}) => {
       {
         randomPictures.map(
           picture => (
-            <figure>
-              <img src ={picture.hdurl} alt="y'en a pas t'as vu"/>
+            <figure className="box-random-pictures">
+              <img className="img-random-pictures" src ={picture.hdurl} alt="y'en a pas t'as vu"/>
             </figure>
           )
         )

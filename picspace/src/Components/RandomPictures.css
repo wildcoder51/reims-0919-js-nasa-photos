@@ -3,7 +3,7 @@
   flex-wrap: wrap;
 }
 
-figure {
+.box-random-pictures {
   display: flex;
   box-sizing: border-box;
   margin: 0;
@@ -12,7 +12,7 @@ figure {
   vertical-align: middle;
 }
 
-figure > img {
+.img-random-pictures {
   width: 100%;
   height: auto;
 }
