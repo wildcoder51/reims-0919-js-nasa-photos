@@ -24,12 +24,12 @@
     align-items: center;
   }
 
-  .box-random-pictures {
-    display: flex;
-    box-sizing: border-box;
-    margin: 0;
-    width: 50%;
-    padding: 1rem;
-    vertical-align: middle;
-  }
+.box-random-pictures {
+  display: flex;
+  box-sizing: border-box;
+  margin: 0;
+  width: 50%;
+  padding: 1rem;
+  vertical-align: middle;
+}
 }
