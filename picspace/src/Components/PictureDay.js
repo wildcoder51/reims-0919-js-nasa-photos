@@ -2,8 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import './PictureDay.css';
 
-//importer la photo du jour à partir de l'API de la nasa
-//lien de l'API https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY (ne pas oublier la clé fournie par mail)
+
 class PictureDay extends React.Component{
   constructor (props){
     super(props);
@@ -16,7 +15,7 @@ class PictureDay extends React.Component{
   }
 
   picturesAPI=() =>{
-    axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
+    axios.get('https://api.nasa.gov/planetary/apod?api_key=aDmDjpr9tOtUXNV9qcaHFd5IgQvaj4RzAczrT2ka')
       .then(response => {
         this.setState({
           hdurl: response.data.hdurl,
