@@ -27,6 +27,10 @@ class PictureDay extends React.Component{
       });
   };
   
+  componentDidMount(){
+    this.picturesAPI();
+  }
+
   render(){
     return (
       <div>
@@ -42,9 +46,6 @@ class PictureDay extends React.Component{
         </div>
       </article>
 
-        <div>
-        <button type="button" onClick={this.picturesAPI}>Get picture day</button>
-        </div>  
         </div>
     )
   }
