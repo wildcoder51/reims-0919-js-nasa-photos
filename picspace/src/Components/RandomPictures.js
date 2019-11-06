@@ -6,36 +6,44 @@ class RandomPictures extends React.Component {
   constructor(props){
     super(props)
     this.state = {
-      name :"",
-      url:"",
-      arrayPictures: [],
+      id: "",
+      name : "",
+      file_url: "",
+      arrayId: [],
+      arrayPictures:[],
     }
-  this.getRandomPictures = this.getRandomPictures.bind(this);
+  this.getIdPicture = this.getIdPicture.bind(this);
   }
 
-  getRandomPictures() {
+  getIdPicture() {
     // Send the request
-    axios.get('http://hubblesite.org/api/v3/images/all')
+    axios.get('http://hubblesite.org/api/v3/image/4574')
       // Extract the DATA from the received response
       .then(response => response.data)
       // Use this data to update the state
-      .then(data => {console.log(data);
+      .then(data =>{ 
+        console.log (arrayId)
+        this.setState({
+        arrayId : data});
       });
-  
-    };
+  };
+
+  // getRandomPictures() {
+  //   // Send the request
+  //   axios.get('http://hubblesite.org/api/v3/image/')
+  //     // Extract the DATA from the received response
+  //     .then(response => response.data)
+  //     // Use this data to update the state
+  //     .then(data =>{ 
+  //       this.setState({
+  //       arrayPictures : data});
+  //     });
+  // };
   
 
-  componentDidMount() {
-    this.getRandomPictures()
-  }
-
-  // listOfPictures = (picture) =>{
-  //   return (
-  //     <RandomPictures name={picture.name} url={picture.url}/>
-  //   )
+  // componentDidMount() {
+  //   this.getRandomPictures()
   // }
-
-  
 
   render() {
 
