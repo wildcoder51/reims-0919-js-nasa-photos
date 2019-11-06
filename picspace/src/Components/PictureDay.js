@@ -15,7 +15,7 @@ class PictureDay extends React.Component{
   }
 
   picturesAPI=() =>{
-    axios.get('https://api.nasa.gov/planetary/apod?api_key=aDmDjpr9tOtUXNV9qcaHFd5IgQvaj4RzAczrT2ka')
+    axios.get(`https://api.nasa.gov/planetary/apod?api_key=${process.env.REACT_APP_APIKEY}`)
       .then(response => {
         this.setState({
           hdurl: response.data.hdurl,
