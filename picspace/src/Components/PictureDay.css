@@ -1,11 +1,11 @@
-figure > img {
+.img-picture-day {
   text-align: center;
   width: 35%;
   height: 70vh;
 }
 
 @media screen and (max-width: 800px) {
-  figure > img {
+  .img-picture-day {
     text-align: center;
     width: 70%;
     height: 40vmin;
