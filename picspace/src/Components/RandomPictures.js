@@ -6,9 +6,9 @@ const RandomPicture = ({randomPictures}) => {
     <article className="RandomPictures">
       {
         randomPictures.map(
-          picture => (
-            <figure className='box-random-pictures'>
-              <img className='img-random-pictures' src ={picture.hdurl} alt="y'en a pas t'as vu"/>
+          (picture, index) => (
+            <figure key={index} className="box-random-pictures">
+              <img className="img-random-pictures" src ={picture.hdurl} alt="spaceCapture"/>
             </figure>
           )
         )
