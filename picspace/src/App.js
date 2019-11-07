@@ -89,24 +89,26 @@ const randomPictures = [{
 
 class App extends React.Component {
   constructor (props){
-    super (props) 
+    super (props);
     this.state = {
       isSelected : false
-    }
+    };
   }
 
 
   render (){
     return (
       <div className="App">
-        <h1>Picture of the Day</h1>
+        <h1><em>Picture of the Day</em></h1>
         <section className="picture-of-day"> 
           <PictureDay />
         </section>
         <section className="random-pictures">
-
+          <br/>
+          <hr/>
+          <br/>
         </section>
-        <h2> Random Pictures</h2>
+        <h2><em>Random Pictures</em></h2>
         <section>
           <RandomPictures randomPictures={randomPictures}
             isSelected={this.state.isSelected}/>
