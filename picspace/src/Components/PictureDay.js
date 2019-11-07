@@ -34,8 +34,8 @@ class PictureDay extends React.Component{
     return (
       <div>
       <article>
-        <figure>
-          <img src={this.state.hdurl} 
+        <figure className="pictureDay">
+          <img className="pictureDayImg" src={this.state.hdurl} 
           alt={this.state.title} />
         </figure>
         <div>
