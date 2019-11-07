@@ -12,20 +12,15 @@ class RandomPictures extends React.Component {
       file_url: "",
       arrayId: [],
       arrayPictures:[],
-      //onSelect : false,
-      isSelected : false,
       arrayBasket : [],
     }
     this.getIdPicture = this.getIdPicture.bind(this);
-    //this.handleClick = this.handleClick.bind(this);
     this.addToBasket = this.addToBasket.bind(this);
   }
  
   getIdPicture() {
     let tempArray = [];
-    // Send the request
     axios.get('http://hubblesite.org/api/v3/images/all')
-      // Extract the DATA from the received response
       .then(response => {
         for(let i = 0; i < response.data.length; i++) {
           this.state.arrayId.push(response.data[i].id);
@@ -34,7 +29,7 @@ class RandomPictures extends React.Component {
         for(let y = 0; y < this.state.arrayId.length; y++) {
           axios.get(`http://hubblesite.org/api/v3/image/${this.state.arrayId[y]}`)
           .then(response => {
-            if (response.data.image_files !== undefined) {
+            if (response.data.image_files) {
               tempArray.push(`http://${response.data.image_files[0].file_url}`);
               this.setState({ arrayPictures: tempArray});
             }
@@ -48,16 +43,9 @@ class RandomPictures extends React.Component {
     this.getIdPicture()
   }
 
-  // handleClick = (onSelect) =>{
-  //   this.setState({
-  //     onSelect : !this.state.onSelect,
-  //   })
-  // }
   addToBasket(picture){
     this.setState({arrayBasket : [...this.state.arrayBasket, picture]})
   }
-
-
 
   render() {
  
