@@ -24,14 +24,8 @@ class App extends React.Component {
         </section>
         <h2><em>Random Pictures</em></h2>
         <section>
-          <RandomPictures randomPictures={randomPictures}
-            isSelected={this.state.isSelected}/>
+          <RandomPictures />
         </section>
-        <h2> Random Pictures</h2>
-        <section>
-          <RandomPictures  />
-        </section>
-   
       </div>
     );
   }
