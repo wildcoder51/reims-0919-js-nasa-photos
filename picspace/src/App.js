@@ -7,7 +7,6 @@ class App extends React.Component {
   constructor (props){
     super (props) 
     this.state = {
-      isSelected : false
     }
   }
 
@@ -23,7 +22,7 @@ render (){
         </section>
      <h2> Random Pictures</h2>
      <section>
-       <RandomPictures />
+       <RandomPictures  />
      </section>
    
   </div>

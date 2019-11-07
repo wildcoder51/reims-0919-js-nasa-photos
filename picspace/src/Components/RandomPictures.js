@@ -14,50 +14,49 @@ class RandomPictures extends React.Component {
     }
   this.getIdPicture = this.getIdPicture.bind(this);
   }
-
+ 
   getIdPicture() {
+    var tempArray = [];
     // Send the request
-    axios.get('http://hubblesite.org/api/v3/image/4574')
+    axios.get('http://hubblesite.org/api/v3/images/all')
       // Extract the DATA from the received response
-      .then(response => response.data)
-      // Use this data to update the state
-      .then(data =>{ 
-        console.log (arrayId)
-        this.setState({
-        arrayId : data});
-      });
+      .then(response => {
+        for(var i = 0; i < response.data.length; i++) {
+          this.state.arrayId.push(response.data[i].id);
+        };
+       
+        for(var y = 0; y < this.state.arrayId.length; y++) {
+          axios.get('http://hubblesite.org/api/v3/image/'+this.state.arrayId[y])
+          .then(response => {
+            if (response.data.image_files !== undefined) {
+              tempArray.push("http://"+response.data.image_files[0].file_url);
+              this.setState({ arrayPictures: tempArray});
+            }
+          })
+        };
+      });     
   };
+ 
 
-  // getRandomPictures() {
-  //   // Send the request
-  //   axios.get('http://hubblesite.org/api/v3/image/')
-  //     // Extract the DATA from the received response
-  //     .then(response => response.data)
-  //     // Use this data to update the state
-  //     .then(data =>{ 
-  //       this.setState({
-  //       arrayPictures : data});
-  //     });
-  // };
-  
+  componentDidMount() {
+    this.getIdPicture()
+  }
+ 
 
-  // componentDidMount() {
-  //   this.getRandomPictures()
-  // }
 
   render() {
-
+ 
     return (
       <article className="RandomPictures">
-        {
-        this.state.arrayPictures.map(picture => 
-        (<figure className='box-random-pictures'>
-        <img className='img-random-pictures' src ={picture.url} alt={picture.name}/>
-        </figure>
-            )
+      {
+      this.state.arrayPictures.map(picture => 
+      (<figure className='box-random-pictures'>
+      <img className='img-random-pictures' src ={picture} alt={picture.name}/>
+      </figure>
           )
-        }
-      </article>
+        )
+      }
+    </article>
     );
   }
 }
