@@ -5,6 +5,7 @@
 
 .box-random-pictures {
   display: flex;
+  flex-direction: column;
   box-sizing: border-box;
   margin: 0;
   width: 25%;
@@ -16,6 +17,8 @@
   width: 100%;
   height: auto;
 }
+
+
 
 @media screen and (max-width : 800px) {
   .RandomPictures {
