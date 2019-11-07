@@ -12,7 +12,7 @@ height: 70vh;
 } 
 
 @media screen and (max-width: 800px) {
-  .pictureDay {
+  .pictureDayImg {
     text-align: center;
     width: 70%;
     height: 40vmin;
