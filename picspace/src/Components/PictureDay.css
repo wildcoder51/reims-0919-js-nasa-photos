@@ -1,11 +1,11 @@
-.picture-day,img {
+img {
   text-align: center;
   width: 100%;
   height: 70vh;
 }
 
 @media screen and (max-width: 800px) {
-  .img-picture-day {
+  img {
     text-align: center;
     width: 70%;
     height: 40vmin;
