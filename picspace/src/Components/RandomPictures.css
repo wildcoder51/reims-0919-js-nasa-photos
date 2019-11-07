@@ -1,15 +1,14 @@
 .RandomPictures {
-  display: flex;
-  flex-wrap: wrap;
+  column-count: 3;
 }
 
 .box-random-pictures {
-  display: flex;
-  box-sizing: border-box;
+  display: block;
+  /* box-sizing: border-box; */
   margin: 0;
-  width: 25%;
+  /* width: 25%; */
   padding: 1rem;
-  vertical-align: middle;
+  /* vertical-align: middle; */
 }
 
 .img-random-pictures {
@@ -24,12 +23,12 @@
     align-items: center;
   }
 
-  .box-random-pictures {
-    display: flex;
-    box-sizing: border-box;
-    margin: 0;
-    width: 50%;
-    padding: 1rem;
-    vertical-align: middle;
-  }
+.box-random-pictures {
+  display: flex;
+  box-sizing: border-box;
+  margin: 0;
+  width: 50%;
+  padding: 1rem;
+  vertical-align: middle;
+}
 }
