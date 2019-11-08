@@ -44,8 +44,7 @@ class PictureDay extends React.Component{
           <p><span>Description : </span>{this.state.explanation}</p>
         </div>
       </article>
-
-        </div>
+      </div>
     )
   }
 }
