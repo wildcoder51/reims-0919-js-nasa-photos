@@ -4,6 +4,7 @@ import RandomPictures from './Components/RandomPictures';
 import PictureDay from './Components/PictureDay';
 import Navbar from './Components/Navbar';
 
+
 class App extends React.Component {
   constructor (props){
     super (props);
@@ -15,6 +16,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Navbar />
+        
         <h1><em>Picture of the Day</em></h1>
         <section className="picture-of-day"> 
           <PictureDay />
