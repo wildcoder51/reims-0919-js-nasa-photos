@@ -4,7 +4,7 @@ import './Basket.css';
 function Basket(props){
   return(
     <div>
-      {props.arrayBasket}
+      <p>"salut les copains"</p>
     </div>
   );
 }

@@ -1,0 +1,21 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1c1e1f;
+}
+.HeaderLinks{
+  display: flex;
+  width: 70%;
+  height: 5rem;
+  justify-content: flex-end;
+  align-items: center;
+}
+.Headerlink {
+  font-size: 1.5rem;
+  padding :2rem;
+}
+.titre{
+  color: aliceblue;
+  font-size: 2.2em;
+  padding: 24px;
+}
