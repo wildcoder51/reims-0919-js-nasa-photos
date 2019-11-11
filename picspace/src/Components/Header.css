@@ -25,3 +25,8 @@
   font-size: 2.2em;
   padding: 24px;
 }
+
+.titleLogo {
+  display: inline-flex;
+  flex-direction: row;
+}
