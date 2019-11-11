@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   background-color: #1c1e1f;
-  color: #e8e6e3
+  color:  #e8e6e3
 }
 
 h1 {
@@ -9,7 +9,7 @@ h1 {
 }
 
 .linkHubble {
-  color: white;
+  color: blue;
   cursor: pointer;
   text-decoration: none;
 }

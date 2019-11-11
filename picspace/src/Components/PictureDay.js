@@ -38,10 +38,10 @@ class PictureDay extends React.Component{
           <img className="pictureDayImg" src={this.state.hdurl} 
           alt={this.state.title} />
         </figure>
-        <div>
+        <div className="description">
           <h2>{this.state.title}</h2>
           <p>{this.state.date}</p>
-          <p><span>Description : </span>{this.state.explanation}</p>
+          <p className="explanation"><span>Description : </span>{this.state.explanation}</p>
         </div>
       </article>
       </div>

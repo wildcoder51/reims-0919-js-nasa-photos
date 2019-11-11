@@ -16,12 +16,12 @@
 }
 
 .link {
-  color: white;
+  color:  #e8e6e3;
   cursor: pointer;
   text-decoration: none;
 }
 .titre{
-  color: aliceblue;
+  color:  #e8e6e3;
   font-size: 2.2em;
   padding: 24px;
 }
