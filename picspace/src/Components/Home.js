@@ -1,6 +1,7 @@
 import React from 'react';
 import RandomPictures from './RandomPictures';
 import PictureDay from './PictureDay';
+import ScrollUpButton from './ScrollUpButton';
 
 
 function Home() {
@@ -21,6 +22,9 @@ function Home() {
       <section>
         <RandomPictures />
       </section>
+      <div>
+        <ScrollUpButton/>
+      </div>
     </div>
   );
 }

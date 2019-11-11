@@ -9,7 +9,7 @@ const Header = () => {
       <div className="titre">PicSpace</div>
         <div className="HeaderLinks">
           <div className="Headerlink"><Link className="link" to="/">Home</Link></div>
-          <div className="Headerlink"><Link className="link" to="/Basket">Ma selection</Link></div>
+          <div className="Headerlink"><Link className="link" to="/Basket">My selection</Link></div>
         </div>
     </div>
 
