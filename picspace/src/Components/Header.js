@@ -8,7 +8,7 @@ const Header = () => {
     <div className="Header">
       <div className="titleLogo">
       <div className="titre">PicSpace</div>
-      <img src="https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/nasa-logo.svg"/>
+      <img src="https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/nasa-logo.svg" alt=""/>
       </div>
         <div className="HeaderLinks">
           <div className="Headerlink"><Link className="link" to="/">Home</Link></div>
