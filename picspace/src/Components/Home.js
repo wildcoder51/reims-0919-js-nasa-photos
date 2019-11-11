@@ -1,7 +1,8 @@
 import React from 'react';
 import RandomPictures from './RandomPictures';
 import PictureDay from './PictureDay';
-import ScrollUpButton from './ScrollUpButton';
+import {CircleArrow as ScrollUpButton} from "react-scroll-up-button"; 
+import './Home.css';
 
 
 function Home() {
@@ -18,7 +19,7 @@ function Home() {
         <hr/>
         <br/>
       </section>
-      <h2><em>Random Pictures</em></h2>
+      <h2><em>Random Pictures from : <a className="linkHubble" href="https://hubblesite.org/">Hubble Site</a></em></h2>
       <section>
         <RandomPictures />
       </section>

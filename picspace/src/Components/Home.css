@@ -7,3 +7,9 @@
 h1 {
   text-align: center;
 }
+
+.linkHubble {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
