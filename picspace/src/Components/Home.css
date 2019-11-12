@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+  background-color: #1c1e1f;
+  color:  #e8e6e3
+}
+
+h1 {
+  text-align: center;
+}
+
+.linkHubble {
+  color: blue;
+  cursor: pointer;
+  text-decoration: none;
+}
