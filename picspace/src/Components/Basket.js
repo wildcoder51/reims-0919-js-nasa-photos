@@ -5,7 +5,8 @@ function Basket({content}){
   return(
     <div>
       {content && <ul>
-        {content.map((picture) => <li>{picture}</li>)}
+        {content.map((picture) => 
+        <img src={picture} alt=""/>)}
       </ul>}
     </div>
   );
