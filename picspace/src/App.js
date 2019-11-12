@@ -6,22 +6,30 @@ import Basket from './Components/Basket';
 import Header from './Components/Header';
 import Footer from './Components/Footer'
 
-function App (){
-  return (
-    <div>
-    <div> 
-      <Header />
-      <Switch>
-        <Route exact path="/" component={Home}/>
-        <Route path="/basket" component ={Basket}/>
-      </Switch>
-    </div>
-    <div>
-      <Footer/>
-    </div>
-    </div>
-    
-  );
+class App extends React.Component{
+  constructor(props){
+    super(props)
+    this.state = {
+      basket : []
+    }
+    this.addToBasket = this.addToBasket.bind(this);
+  }
+  addToBasket(picture) {
+    this.setState({basket : [...this.state.basket, picture]});
+  }
+  render (){
+    return (
+      <div>
+        <Header />
+        <Switch>
+          <Route exact path="/" render ={() => <Home addToBasket={this.addToBasket} />}/>
+          <Route path="/basket" render ={() => <Basket content={this.state.basket} />}/>
+        </Switch>
+        <Footer/>
+      </div>
+      
+    );
+  }
 }
 
 

@@ -1,10 +1,12 @@
 import React from 'react';
 import './Basket.css';
 
-function Basket(props){
+function Basket({content}){
   return(
     <div>
-      <p>"salut les copains"</p>
+      {content && <ul>
+        {content.map((picture) => <li>{picture}</li>)}
+      </ul>}
     </div>
   );
 }

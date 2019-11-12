@@ -12,10 +12,8 @@ class RandomPictures extends React.Component {
       file_url: '',
       arrayId: [],
       arrayPictures:[],
-      arrayBasket : [],
     };
     this.getIdPicture = this.getIdPicture.bind(this);
-    this.addToBasket = this.addToBasket.bind(this);
   }
  
   getIdPicture() {
@@ -43,19 +41,14 @@ class RandomPictures extends React.Component {
     this.getIdPicture();
   }
 
-  addToBasket(picture){
-    this.setState({arrayBasket : [...this.state.arrayBasket, picture]});
-  }
-
   render() {
- 
     return (
       <article className="RandomPictures">
         {
           this.state.arrayPictures.map(picture =>
             (<figure className='box-random-pictures' key={picture} >
               <img className='img-random-pictures' src ={picture} alt={picture}/>
-              <button className='img-checkbox'  onClick={()=>this.addToBasket(picture)} >Ajouter au panier</button>
+              <button className='img-checkbox'  onClick={()=>this.props.addToBasket(picture)} >Ajouter au panier</button>
             </figure>
             )
           )
