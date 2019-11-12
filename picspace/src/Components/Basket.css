@@ -1,0 +1,11 @@
+.basketBlock {
+  background-color: #1c1e1f;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.basketPicture {
+  width: 25%;
+  /* display: flex;
+  justify-content: space-around; */
+}
