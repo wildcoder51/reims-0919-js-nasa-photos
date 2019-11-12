@@ -1,34 +1,37 @@
 import React from 'react';
 import './App.css';
-import RandomPictures from './Components/RandomPictures';
-import PictureDay from './Components/PictureDay'
+import {Switch, Route} from "react-router-dom";
+import Home from './Components/Home';
+import Basket from './Components/Basket';
+import Header from './Components/Header';
+import Footer from './Components/Footer'
 
-class App extends React.Component {
-  constructor (props){
-    super (props) 
+class App extends React.Component{
+  constructor(props){
+    super(props)
     this.state = {
+      basket : []
     }
+    this.addToBasket = this.addToBasket.bind(this);
   }
-
-render (){
-  return (
-    <div className="App">
-        <h1>Picture of the Day</h1>
-        <section className="picture-of-day"> 
-          <PictureDay />
-        </section>
-        <section className="random-pictures">
-
-        </section>
-     <h2> Random Pictures</h2>
-     <section>
-       <RandomPictures  />
-     </section>
-   
-  </div>
-);
+  addToBasket(picture) {
+    this.setState({basket : [...this.state.basket, picture]});
+  }
+  render (){
+    return (
+      <div>
+        <Header />
+        <Switch>
+          <Route exact path="/" render ={() => <Home addToBasket={this.addToBasket} />}/>
+          <Route path="/basket" render ={() => <Basket content={this.state.basket} />}/>
+        </Switch>
+        <Footer/>
+      </div>
+      
+    );
+  }
 }
-}
+
 
 
 export default App;

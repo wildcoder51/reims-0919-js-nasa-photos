@@ -11,6 +11,18 @@ align-items: center;
 height: 70vh;
 } 
 
+.description {
+  display: flex;
+  flex-direction: column;
+  width : 100%;
+  height: auto;
+  align-items: center;
+}
+.explanation {
+  width: 70%;
+  align-items: center;
+}
+
 @media screen and (max-width: 800px) {
   .pictureDayImg {
     text-align: center;
