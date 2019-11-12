@@ -12,11 +12,8 @@ class RandomPictures extends React.Component {
       file_url: '',
       arrayId: [],
       arrayPictures:[],
-      arrayBasket : [],
-      isOpen: false,
     };
     this.getIdPicture = this.getIdPicture.bind(this);
-    this.addToBasket = this.addToBasket.bind(this);
   }
  
   getIdPicture() {
@@ -44,38 +41,14 @@ class RandomPictures extends React.Component {
     this.getIdPicture();
   }
 
-  addToBasket(picture){
-    this.setState({arrayBasket : [...this.state.arrayBasket, picture]});
-  }
-
-  handleShowDialog = () => {
-    this.setState({ isOpen: !this.state.isOpen });
-
-  };
-
   render() {
- 
     return (
       <article className="RandomPictures">
         {
           this.state.arrayPictures.map(picture =>
             (<figure className='box-random-pictures' key={picture} >
-              <img className='img-random-pictures' src ={picture} alt={picture} onClick={this.handleShowDialog}>{this.state.isOpen && (
-              <dialog
-                className="dialog"
-                style={{ position: "absolute" }}
-                open
-                onClick={this.handleShowDialog}
-              >
-                <img
-                  className="fullscreen"
-                  src={picture}
-                  onClick={this.handleShowDialog}
-                  alt="no image"
-                />
-              </dialog>
-                )}
-              <button className='img-checkbox'  onClick={()=>this.addToBasket(picture)} >Ajouter au panier</button>
+              <img className='img-random-pictures' src ={picture} alt={picture}/>
+              <button className='img-checkbox'  onClick={()=>this.props.addToBasket(picture)} >Ajouter au panier</button>
             </figure>
             )
           )

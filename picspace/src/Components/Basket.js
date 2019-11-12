@@ -1,10 +1,13 @@
 import React from 'react';
 import './Basket.css';
 
-function Basket(props){
+function Basket({content}){
   return(
     <div>
-      {props.arrayBasket}
+      {content && <ul>
+        {content.map((picture) => 
+        <img src={picture} alt=""/>)}
+      </ul>}
     </div>
   );
 }
