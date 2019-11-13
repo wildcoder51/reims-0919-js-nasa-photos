@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import './PictureDay.css';
+import Fullscreen from "react-full-screen";
 
 
 class PictureDay extends React.Component{
@@ -11,6 +12,7 @@ class PictureDay extends React.Component{
       title : "",
       date : "",
       explanation : "",
+      isFull: false,
     };
   }
 
@@ -29,6 +31,9 @@ class PictureDay extends React.Component{
   componentDidMount(){
     this.picturesAPI();
   }
+  goFull = () => {
+    this.setState({ isFull: true });
+  }
 
   render(){
     return (
@@ -42,6 +47,17 @@ class PictureDay extends React.Component{
           <h2>{this.state.title}</h2>
           <p>{this.state.date}</p>
           <p className="explanation"><span>Description : </span>{this.state.explanation}</p>
+          <button onClick={this.goFull}>Go Fullscreen</button>
+          <Fullscreen
+                enabled={this.state.isFull}
+                onChange={isFull => this.setState({isFull})}>
+                  {this.state.isFull 
+                  ?
+                    <img  src={this.state.hdurl} alt=''/>
+                  :
+                    <></>
+                 }
+              </Fullscreen>
         </div>
       </article>
       </div>
