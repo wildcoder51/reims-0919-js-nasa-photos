@@ -5,14 +5,16 @@
   background-color: #1c1e1f;
   color: aliceblue;
 }
+
 .footerTitle {
   text-align: center;
 }
 
 .listProfile {
   display: flex;
-  flex-direction: row;
-  text-align: center;
+  justify-content: space-around;
+  flex-direction: row; 
+  text-align: center; 
 }
 
 .personnalProfile {
@@ -24,16 +26,39 @@
 .logos {
   display: flex;
   align-content: center;
+  flex-wrap: nowrap;
 }
 
 .logoGithub {
-  width : 50px;
+  width : 25%;
   padding: 10px;
   background-color: cornsilk;
   border-radius: 70%;
 }
 .logoLinkedin {
-  width: 50px;
+  width: 25%;
   text-align: center;
   padding: 10px;
+}
+
+@media screen and (max-width : 800px) {
+  
+  .listProfile {
+    display: flex;
+    flex-wrap: wrap; 
+  }
+  .personnalProfile {
+    width: 40%; 
+  }
+  .logoGithub {
+    width : 10%;
+    padding: 10px;
+    background-color: cornsilk;
+    border-radius: 70%;
+  }
+  .logoLinkedin {
+    width: 10%;
+    text-align: center;
+    padding: 10px;
+  }
 }
