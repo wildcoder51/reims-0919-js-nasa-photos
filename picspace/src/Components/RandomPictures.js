@@ -47,8 +47,8 @@ class RandomPictures extends React.Component {
         {
           this.state.arrayPictures.map(picture =>
             (<figure className='box-random-pictures' key={picture} >
-              <img className='img-random-pictures' src ={picture} alt={picture}/>
-              <button className='img-checkbox'  onClick={()=>this.props.addToBasket(picture)} >Ajouter au panier</button>
+              <img className='img-random-pictures' src ={picture} alt={picture} onClick={()=>this.props.addBasketAndAlert(picture)}/>
+              <p>Clic to add</p>
             </figure>
             )
           )

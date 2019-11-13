@@ -11,18 +11,19 @@ class App extends React.Component{
     super(props)
     this.state = {
       basket : []
-    }
-    this.addToBasket = this.addToBasket.bind(this);
+    };
+    this.addBasketAndAlert = this.addBasketAndAlert.bind(this);
   }
-  addToBasket(picture) {
-    this.setState({basket : [...this.state.basket, picture]});
+  addBasketAndAlert(picture) {
+    this.setState({basket : [...this.state.basket, picture]})
+    alert('Added !')
   }
   render (){
     return (
       <div>
         <Header />
         <Switch>
-          <Route exact path="/" render ={() => <Home addToBasket={this.addToBasket} />}/>
+          <Route exact path="/" render ={() => <Home addBasketAndAlert={this.addBasketAndAlert} />}/>
           <Route path="/basket" render ={() => <Basket content={this.state.basket} />}/>
         </Switch>
         <Footer/>
