@@ -27,13 +27,46 @@
 }
 
 .logoGithub {
-  width : 50px;
+  width : 15%;
   padding: 10px;
   background-color: cornsilk;
   border-radius: 70%;
 }
+
 .logoLinkedin {
-  width: 50px;
+  width: 15%;
   text-align: center;
   padding: 10px;
+}
+
+
+@media screen and (max-width : 900px){
+  .listProfile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    
+  }
+
+  .logoGithub {
+    width : 15%;
+    padding: 10px;
+    background-color: cornsilk;
+    border-radius: 70%;
+  }
+
+  .logoLinkedin {
+    width: 15%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .personnalProfile {
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    width: 39%;
+  }
+
 }
