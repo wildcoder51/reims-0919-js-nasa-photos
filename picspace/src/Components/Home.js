@@ -14,12 +14,16 @@ function Home({addToBasket}) {
       <section className="picture-of-day"> 
         <PictureDay />
       </section>
-      <section className="random-pictures">
-        <br/>
-        <hr/>
-        <br/>
-      </section>
-      <h2><em>Random Pictures from : <a className="linkHubble" href="https://hubblesite.org/">Hubble Site</a></em></h2>
+      <hr/>
+      <h2>Pictures from Hubble Space Telescope</h2>
+      <h4>Notes (from Wikipedia) :</h4>
+      <figure className="random-block-notes">
+        <img className='hubble-miror' src='https://upload.wikimedia.org/wikipedia/commons/d/d6/Working_on_Hubble%27s_Main_Mirror_in_1990_22_lg_web.jpg' alt='' />
+        <figcaption className='text-hubble'>The Hubble is a space telescope that was launched into low Earth orbit in 1990 and remains in operation.<br/>That’s not the first space telescope, but it is <span>one of the largest and most versatile</span>.
+          <br/>Hubble features a <span>2.4-meter (7.9 ft) mirror</span>, and its four main instruments observe in <strong>the ultraviolet, visible, and near infrared</strong> regions of the electromagnetic spectrum.
+          <br/><p>Learn more on the <a className='link-hubble-text' href="https://hubblesite.org/">hubblesite.org</a></p>
+        </figcaption>
+      </figure>
       <section>
         <RandomPictures addToBasket={addToBasket} />
       </section>
