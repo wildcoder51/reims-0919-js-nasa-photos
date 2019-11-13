@@ -5,7 +5,7 @@ import {CircleArrow as ScrollUpButton} from "react-scroll-up-button";
 import './Home.css';
 
 
-function Home({addToBasket}) {
+function Home({addBasketAndAlert}) {
   return(
 
     <div className="App">
@@ -21,7 +21,7 @@ function Home({addToBasket}) {
       </section>
       <h2><em>Random Pictures from : <a className="linkHubble" href="https://hubblesite.org/">Hubble Site</a></em></h2>
       <section>
-        <RandomPictures addToBasket={addToBasket} />
+        <RandomPictures addBasketAndAlert={addBasketAndAlert} />
       </section>
       <ScrollUpButton/>
     </div>

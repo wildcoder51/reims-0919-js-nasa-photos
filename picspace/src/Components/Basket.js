@@ -4,11 +4,10 @@ import './Basket.css';
 function Basket({content}){
   return(
     <div>
-      {content && <figure className="basketBlock">
+      {content && <ul>
         {content.map((picture) => 
-          <img className="basketPicture" src={picture} alt=""/>)}
-      </figure>
-      }
+        <img src={picture} alt=""/>)}
+      </ul>}
     </div>
   );
 }
