@@ -30,35 +30,50 @@
 }
 
 .logoGithub {
+<<<<<<< HEAD
   width : 25%;
+=======
+  width : 15%;
+>>>>>>> 7d68dd62dc9b4879cd47b13cf83ef38451fa60c9
   padding: 10px;
   background-color: cornsilk;
   border-radius: 70%;
 }
+
 .logoLinkedin {
-  width: 25%;
+  width: 15%;
   text-align: center;
   padding: 10px;
 }
 
-@media screen and (max-width : 800px) {
-  
+
+@media screen and (max-width : 900px){
   .listProfile {
     display: flex;
-    flex-wrap: wrap; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    
   }
-  .personnalProfile {
-    width: 40%; 
-  }
+
   .logoGithub {
-    width : 10%;
+    width : 15%;
     padding: 10px;
     background-color: cornsilk;
     border-radius: 70%;
   }
+
   .logoLinkedin {
-    width: 10%;
+    width: 15%;
     text-align: center;
     padding: 10px;
   }
+
+  .personnalProfile {
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    width: 39%;
+  }
+
 }
