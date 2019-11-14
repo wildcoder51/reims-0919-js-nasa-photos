@@ -4,7 +4,7 @@ import './Basket.css';
 function Basket({content}){
   return(
     <div>
-      <h2>Ma sélection</h2>
+      <h2>My selection</h2>
       <div>
         {content && <figure className="basketBlock">
           {content.map((picture) => 

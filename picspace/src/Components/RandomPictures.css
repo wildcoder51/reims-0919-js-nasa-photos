@@ -18,10 +18,13 @@
 .button {
   background-color: grey;
   color: black;
+  font-size: 0.8em;
+  font-weight: bold;
   border : transparent;
   width: 6rem;
+  height: 2rem;
   border-radius: 20%;
-  margin-right: 2rem;
+  margin: 0 2rem ;
 }
 
 /* .dialog {
@@ -48,11 +51,15 @@
     vertical-align: middle;
   }
   .button {
-    background-color: grey;
+    display: none;
+    /* background-color: grey;
     color: black;
     border : transparent;
     width: rem;
     border-radius: 20%;
-    margin-right: 2rem;
+    margin-right: 2rem; */
+  }
+  .title-random-pictures {
+    font-size: 0.7em;
   }
 }

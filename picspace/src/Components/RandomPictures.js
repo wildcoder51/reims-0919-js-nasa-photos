@@ -68,8 +68,8 @@ class RandomPictures extends React.Component {
               (<figure className='box-random-pictures' key={picture.id} >
                 <p className='title-random-pictures'>Name{picture.name}</p>
                 <img className='img-random-pictures' src ={picture.url} alt={picture.name}/>
-                <button className='img-checkbox'  onClick={()=>this.props.addBasketAndAlert(picture.url)} >Add Pics</button>
-                <button onClick={()=>this.goFull(picture.url)}>Go Fullscreen</button>
+                <button className='button' onClick={()=>this.props.addBasketAndAlert(picture.url)} >Add Pics</button>
+                <button className='button' onClick={()=>this.goFull(picture.url)}>Fullscreen</button>
               </figure>
               )
             )
