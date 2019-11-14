@@ -18,6 +18,7 @@ class App extends React.Component{
     this.setState({basket : [...this.state.basket, picture]});
     alert('Added !');
   }
+  
   render (){
     return (
       <div>
