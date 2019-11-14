@@ -16,12 +16,12 @@
   width: 300px;
 }
 
-.dialog {
+/* .dialog {
   box-shadow: 0 8px 6px -6px black;
   position: static;
   left: 20%;
   top: 10%;
-}
+} */
 
 
 @media screen and (max-width : 800px) {
@@ -30,12 +30,12 @@
     flex-wrap: wrap;
   }
 
-.box-random-pictures {
-  display: flex;
-  box-sizing: border-box;
-  margin: 0;
-  width: 50%;
-  padding: 1rem;
-  vertical-align: middle;
-}
+  .box-random-pictures {
+    display: flex;
+    box-sizing: border-box;
+    margin: 0;
+    width: 50%;
+    padding: 1rem;
+    vertical-align: middle;
+  }
 }

@@ -2,8 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #1c1e1f;
+  background-color: hsl(200, 5%, 12%);
   color: aliceblue;
+  position: absolute;
+  bottom: 0;
 }
 
 .footerTitle {
@@ -71,5 +73,4 @@
     padding: 20px;
     width: 39%;
   }
-
 }
