@@ -4,8 +4,8 @@
   align-items: center;
   background-color: hsl(200, 5%, 12%);
   color: aliceblue;
-  position: absolute;
-  bottom: 0;
+  /* position: absolute;
+  bottom: 0; */
 }
 
 .footerTitle {

@@ -1,32 +1,77 @@
-.pictureday {
+.blocPictureDay {
+  display: flex;
+  flex-direction: row;
   width : 100%;
-  height: 50px;
+  /* border: whitesmoke solid 2px;
+  padding: 2% 0% 2% 0%; */
+  /* height: 20vh; */
+}
+
+h3{
+  font-size: 2.0em;
+}
+
+.pictureDay{
+  margin: 0;
 }
 
 
 .pictureDayImg {
-margin: 0;
-width: 80%;
-align-items: center;
-height: 70vh;
+  margin: 0;
+  width: 90%;
+  align-items: center;
+  height: 80vh;
 } 
 
 .description {
+  background-color: whitesmoke;
+  color: black;
   display: flex;
   flex-direction: column;
   width : 100%;
-  height: auto;
+  height: 80vh;
   align-items: center;
+  margin-right: 2%;
 }
+
 .explanation {
   width: 70%;
   align-items: center;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
+
+  h3{
+    font-size: 1.5em;
+  }
+  h1{
+    font-size: 1.5em;
+  } 
+  .blocPictureDay {
+    display: flex;
+    flex-direction: column;
+    width : 100%;
+    
+  } 
+  /* .explanation {
+    width: 100%;
+    height: 100%;  
+    color: white;
+    } */
+   
+
   .pictureDayImg {
     text-align: center;
-    width: 70%;
+    width: 50%;
     height: 40vmin;
+  }
+  .description {
+    background-color: #1c1e1f;
+  } 
+  h3 {
+    color: white;
+  }
+  p {
+    color: white
   }
 }

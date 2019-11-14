@@ -4,9 +4,7 @@
   text-align: center;
   background-color: #1c1e1f;
   color: #e8e6e3;
-  /* height: 100%;
-  display: flex;
-  flex-direction: column; */
+ 
 }
 
 h1 {
@@ -15,3 +13,7 @@ h1 {
   text-align: center;
 }
 
+.fullScreenButton{
+  background-color: black;
+  color: white;
+}
