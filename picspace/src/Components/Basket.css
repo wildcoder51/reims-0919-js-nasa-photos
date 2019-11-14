@@ -1,0 +1,65 @@
+.basketBlock {
+  background-color: #1c1e1f;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20%;
+}
+
+.basketPicture {
+  width: 25%;
+  padding: 0.5%;
+}
+
+h2{
+  text-align: center;
+  color: white;
+}
+
+.listButton {
+  display: flex;
+  justify-content: center;
+
+}
+
+.buttonClic {
+  cursor: pointer;
+  background-color:#1c1e1f;
+  border: transparent;
+ 
+}
+
+.buttonPrint {
+  padding: 15px;
+  width: 50px;
+  height: 50px;
+ 
+}
+
+.buttonDownload {
+  padding: 23px;
+  width: 30px;
+  height: 30px;
+}
+
+.buttonMail {
+  padding: 19px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #1c1e1f;
+}
+
+
+
+@media screen and (max-width : 900px){
+  .basketBlock {
+    background-color: #1c1e1f;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .basketPicture {
+    width: 45%;
+    padding: 0.5%;
+  }
+}

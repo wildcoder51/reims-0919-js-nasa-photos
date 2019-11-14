@@ -1,15 +1,94 @@
-.App {
-  text-align: center;
+/* .App {
   background-color: #1c1e1f;
   color:  #e8e6e3
-}
+}*/
 
 h1 {
   text-align: center;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  font-size: 3em;
+}  
+hr{
+  margin: 50px;
 }
 
 .linkHubble {
-  color: blue;
+  color : white;
   cursor: pointer;
   text-decoration: none;
+}
+
+h2{
+  font-size: 28px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 2em;
+}
+
+h4{
+  padding-bottom: 25px;
+}
+
+.random-block-notes{
+  background-color: black;
+  display: flex;
+  height: 60vh;
+  /* border: blanchedalmond solid 2px; */
+  /* border-radius: 20px; */
+  /* padding: 10px; */
+
+}
+
+.hubble-miror{
+  width: 40%;
+  height: 55vh;
+  margin: 20px;
+}
+
+.text-hubble{
+
+  /* align-items: center; */
+  font-size: 20px;
+  padding: 8%;
+  
+}
+.link-hubble{
+  text-decoration: none;
+}
+.link-hubble-text{
+  font-weight: bold;
+  color: blue;
+  text-decoration: underline;
+}
+
+@media screen and (max-width : 900px){
+  .random-block-notes{
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    border-radius: 20px;
+    padding: 10px;
+  
+  }
+  
+  .hubble-miror{
+    width: 90%;
+    margin: 20px;
+  }
+  
+  .text-hubble{
+    text-align: justify;
+    font-size: 20px;
+    padding: 20px;
+    
+  }
+  .link-hubble{
+    text-decoration: none;
+  }
+  .link-hubble-text{
+    font-weight: bold;
+    color: blue;
+    text-decoration: underline;
+  }
 }
