@@ -11,3 +11,8 @@ h1 {
   padding:0;
   text-align: center;
 }
+
+.fullScreenButton{
+  background-color: black;
+  color: white;
+}
