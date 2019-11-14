@@ -44,10 +44,10 @@ class PictureDay extends React.Component{
             alt={this.state.title} />
           </div>
           <div className="description">
-            <h2>{this.state.title}</h2>
+            <h3>{this.state.title}</h3>
             <p>{this.state.date}</p>
             <p className="explanation"><span>Description : </span>{this.state.explanation}</p>
-            <button onClick={this.goFull}>Go Fullscreen</button>
+            <button className="fullScreenButton" onClick={this.goFull}>Go Fullscreen</button>
             <Fullscreen
               enabled={this.state.isFull}
               onChange={isFull => this.setState({isFull})}>
