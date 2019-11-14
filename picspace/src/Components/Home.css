@@ -55,3 +55,34 @@ h4{
   color: blue;
   text-decoration: underline;
 }
+
+@media screen and (max-width : 900px){
+  .random-block-notes{
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    border-radius: 20px;
+    padding: 10px;
+  
+  }
+  
+  .hubble-miror{
+    width: 90%;
+    margin: 20px;
+  }
+  
+  .text-hubble{
+    text-align: justify;
+    font-size: 20px;
+    padding: 20px;
+    
+  }
+  .link-hubble{
+    text-decoration: none;
+  }
+  .link-hubble-text{
+    font-weight: bold;
+    color: blue;
+    text-decoration: underline;
+  }
+}
