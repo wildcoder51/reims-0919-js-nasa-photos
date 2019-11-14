@@ -53,7 +53,7 @@ class PictureDay extends React.Component{
                 onChange={isFull => this.setState({isFull})}>
                   {this.state.isFull 
                   ?
-                    <img  src={this.state.hdurl} alt=''/>
+                    <img style={{maxHeight: '1920px' , maxWidth: '1080px'}} src={this.state.hdurl} alt=''/>
                   :
                     <></>
                  }
