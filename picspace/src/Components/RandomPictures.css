@@ -15,12 +15,16 @@
 .fullscreen {
   width: 300px;
 }
-
-.dialog {
-  box-shadow: 0 8px 6px -6px black;
-  position: static;
-  left: 20%;
-  top: 10%;
+.button {
+  background-color: grey;
+  color: black;
+  font-size: 0.8em;
+  font-weight: bold;
+  border : transparent;
+  width: 6rem;
+  height: 2rem;
+  border-radius: 20%;
+  margin: 0 2rem ;
 }
 
 
@@ -30,12 +34,19 @@
     flex-wrap: wrap;
   }
 
-.box-random-pictures {
-  display: flex;
-  box-sizing: border-box;
-  margin: 0;
-  width: 50%;
-  padding: 1rem;
-  vertical-align: middle;
-}
+  .box-random-pictures {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 0;
+    width: 50%;
+    padding: 1rem;
+    vertical-align: middle;
+  }
+  .button {
+    display: none;   
+  }
+  .title-random-pictures {
+    font-size: 0.7em;
+  }
 }
