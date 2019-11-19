@@ -13,10 +13,18 @@ class App extends React.Component{
       basket : []
     };
     this.addBasketAndAlert = this.addBasketAndAlert.bind(this);
+    this.deletePicture = this.deletePicture.bind(this);
   }
   addBasketAndAlert(picture) {
     this.setState({basket : [...this.state.basket, picture]});
     alert('Added !');
+  }
+
+  deletePicture (picture) {
+    this.setState({
+      basket : this.state.basket.filter(basket => basket.picture !== picture)
+      })
+      alert('Delete !');
   }
   
   render (){
@@ -25,7 +33,7 @@ class App extends React.Component{
         <Header />
         <Switch>
           <Route exact path="/" render ={() => <Home addBasketAndAlert={this.addBasketAndAlert} />}/>
-          <Route path="/basket" render ={() => <Basket content={this.state.basket} />}/>
+          <Route path="/basket" render ={() => <Basket content={this.state.basket} deleter = {this.deletePicture}/>}/>
         </Switch>
         <Footer/>
       </div>

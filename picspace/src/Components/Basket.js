@@ -1,7 +1,7 @@
 import React from 'react';
 import './Basket.css';
 
-function Basket({content}){
+function Basket({content, deleter}){
   return(
     <div>
       <h2>My selection</h2>
@@ -9,6 +9,7 @@ function Basket({content}){
         {content && <figure className="basketBlock">
           {content.map((picture) => 
             <img className="basketPicture" src={picture} alt=""/>)}
+            <button type="button" onClick= {() =>deleter(content.picture)} >Delete</button> 
         </figure>}
       </div >
       <div className="listButton">
