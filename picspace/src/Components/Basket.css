@@ -22,6 +22,12 @@ h2{
 
 }
 
+.deleteCenter {
+  display: flex;
+  justify-content: center;
+}
+
+
 .buttonClic {
   cursor: pointer;
   background-color:#1c1e1f;
